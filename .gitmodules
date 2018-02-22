@@ -1,0 +1,3 @@
+[submodule "cocktail-list/spec"]
+	path = cocktail-list/spec
+	url = https://github.com/lewagon/fullstack-challenges-04-Rails-mister-cocktail-specs.git
