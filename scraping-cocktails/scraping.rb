@@ -19,7 +19,7 @@ end
 
 def scrap_cocktail_pages
 
-  csv_options = { write_headers: true, headers: ["name","recipe"] }
+  csv_options = { write_headers: true, headers: ["name","description","recipe"] }
 
   CSV.open('recipes.csv', 'w', csv_options) do |csv|
     CSV.foreach('cocktails.csv') do |row|
@@ -29,9 +29,10 @@ def scrap_cocktail_pages
       html_doc = Nokogiri::HTML(html_file)
 
       name = row[0]
+      description = html_doc.search('.recipe-content').search('p')[2].text.strip
       recipe = html_doc.search('.recipe-content').search('p')[1].text.strip
 
-      csv << [name, recipe]
+      csv << [name, description, recipe]
     end
   end
 end
