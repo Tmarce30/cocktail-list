@@ -18,13 +18,22 @@ def scrap_cocktail_index
 end
 
 def scrap_cocktail_pages
-  # "https://www.socialandcocktail.co.uk/cocktails/mojito"
 
-  html_file = open('mojit-cocktail.htm').read
-  html_doc = Nokogiri::HTML(html_file)
+  csv_options = { write_headers: true, headers: ["name","recipe"] }
 
-  html_doc.search('.recipe-content').each do |element|
-    p element.search('p')[1].text.strip
+  CSV.open('recipes.csv', 'w', csv_options) do |csv|
+    CSV.foreach('cocktails.csv') do |row|
+      url = "https://www.socialandcocktail.co.uk/cocktails/#{row[0]}"
+
+      html_file = open('mojit-cocktail.htm').read
+      html_doc = Nokogiri::HTML(html_file)
+
+      name = row[0]
+      recipe = html_doc.search('.recipe-content').search('p')[1].text.strip
+
+      csv << [name, recipe]
+    end
   end
 end
 
+scrap_cocktail_pages
