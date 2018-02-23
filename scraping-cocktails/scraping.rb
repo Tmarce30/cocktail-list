@@ -1,21 +1,15 @@
-require 'open-uri'
 require 'nokogiri'
+require 'csv'
 
-def scrap_cocktails
-  url = "https://www.socialandcocktail.co.uk/top-100-cocktails/"
 
-  html_file = open(url).read
-  html_doc = Nokogiri::HTML(html_file)
+html_file = open('cocktail-html-source.htm').read
+html_doc = Nokogiri::HTML(html_file)
 
+CSV.open("cocktails.csv", 'w') do |csv|
   html_doc.search('.recipe_summary.pjax').each do |element|
-    puts element.search('h3').text
-    ingredients = element.search('.content-appear').search('p').text.split('br')
+    name = element.search('h3').text
+    ingredients = element.search('.content-appear').search('p').first.text
 
-    # puts element.text.strip
-    # puts element.attribute('href').value
+    csv << [name, ingredients]
   end
 end
-
-# def scrap_ingredients(ingredients)
-#   ingredients
-# end
