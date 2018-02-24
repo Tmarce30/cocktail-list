@@ -16,13 +16,13 @@ end
 def scrap_cocktail_pages
   count = 0
 
-  CSV.open('recipes.csv', 'w') do |csv|
+  CSV.open('recipes.csv', 'a') do |csv|
     CSV.foreach('cocktails.csv') do |row|
-      count +=1
+      count += 1
       p count
       url = "https://www.socialandcocktail.co.uk/cocktails/#{row[0].downcase.gsub(" ", "-")}/"
 
-      html_file = open(url).read
+      html_file = open(url, 'User-Agent' => "#{row[0]}").read
       html_doc = Nokogiri::HTML(html_file)
 
       name = row[0]
