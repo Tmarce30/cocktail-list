@@ -1,23 +1,32 @@
 require 'csv'
 
 def ingredients_list
-  # Open csv to return an array with all the ingredients names
-  # array = [[id, name]]
   ingredients = []
-  CSV.foreach('input-csv/ingredients-names.csv') do |name|
-    ingredients << name
+  CSV.foreach('input-csv/ingredients-names.csv') do |row|
+    ingredients << row
   end
-  return ingredients.flatten
+  ingredients.flatten
 end
 
 
 def set_ingredient_id_in_dose
-  ingredients = ingredient_list
-  # Iterate on ingredient list with index
-    # Iterate on dose csv rows
-    # Set id as index + 1 if ingredient[1] == row ingredient in dose else breake
-    # Save to csv [amount, cocktail_id, ingredient_id]
-    # delete row
+  ingredients = ingredients_list
+
+  csv_options = { write_headers: true, headers: ["amount", "cocktail_id", "ingredient_id"] }
+
+  CSV.open('output-csv/doses-with-foreign-keys.csv', "w", csv_options) do |csv|
+    ingredients.each_with_index do |ingredient, i|
+      CSV.foreach('input-csv/doses.csv') do |row|
+        if ingredient == row[2]
+          ingredient_id = i + 1
+        else
+          next
+        end
+
+        csv << [row[1], row[0], ingredient_id]
+      end
+    end
+  end
 end
 
-p ingredients_list[19]
+set_ingredient_id_in_dose
