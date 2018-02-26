@@ -3,11 +3,15 @@
     <h1>All cocktails</h1>
   </div>
 
-  <% @cocktails.each do |cocktail| %>
+  <% @cocktails.each_slice(3) do |cocktails| %>
     <div class="row">
-      <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
-      <p><%= cocktail.description %></p>
-      <p><%= cocktail.recipe %></p>
+      <% cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-md-4">
+          <h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
+          <p><%= truncate(cocktail.description, :length => 70) %></p>
+          <p><%= truncate(cocktail.recipe, :length => 70) %></p>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>
