@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   end
 
   resources :doses, only: [:destroy]
+
+  root to: 'pages#home'
 end
