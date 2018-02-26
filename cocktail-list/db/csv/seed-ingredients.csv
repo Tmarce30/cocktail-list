@@ -1,0 +1,147 @@
+Name,Flavour,Toping,Mixer,Alcool
+Absinthe,,FALSE,FALSE,TRUE
+Aged Rum,,FALSE,FALSE,TRUE
+Amaretto,,FALSE,FALSE,TRUE
+Anejo Rum,,FALSE,FALSE,TRUE
+Angostura Bitters,,FALSE,FALSE,TRUE
+Apple Schnapps,Apple,FALSE,FALSE,TRUE
+Apple Slice,Apple,TRUE,FALSE,FALSE
+Aromatic Bitters,,FALSE,FALSE,TRUE
+Bacardi Rum,,FALSE,FALSE,TRUE
+Baileys,Coffee,FALSE,FALSE,TRUE
+Benedictine,,FALSE,FALSE,TRUE
+Black Raspberry Liqueur,Raspberry,FALSE,FALSE,TRUE
+Blackberry,Blackberry,TRUE,FALSE,FALSE
+Blue WKD ,,FALSE,FALSE,TRUE
+Blueberry,Blueberry,TRUE,FALSE,FALSE
+Bourbon,,FALSE,FALSE,TRUE
+Brandy,,FALSE,FALSE,TRUE
+Brown Sugar,,TRUE,FALSE,FALSE
+Cachaça,,FALSE,FALSE,TRUE
+Campari,,FALSE,FALSE,TRUE
+Caorunn Gin,,FALSE,FALSE,TRUE
+Caster Sugar,,TRUE,FALSE,FALSE
+Chambord,,FALSE,FALSE,TRUE
+Champagne,,FALSE,FALSE,TRUE
+Cherry Heering,Cherry,FALSE,FALSE,TRUE
+Chocolate Powder,Chocolate,TRUE,FALSE,FALSE
+Cinnamon,Cinnamon,TRUE,FALSE,FALSE
+Coconut Cream,Coconut,FALSE,TRUE,FALSE
+Coffee Bean,Coffee,TRUE,FALSE,FALSE
+Coffee Liqueur,Coffee,FALSE,FALSE,TRUE
+Cognac,,FALSE,FALSE,TRUE
+Cola,Cola,FALSE,TRUE,FALSE
+Cranberry Juice,Cranberry,FALSE,TRUE,FALSE
+Cream,,FALSE,TRUE,FALSE
+Crème de Banane,Banana,FALSE,FALSE,TRUE
+Crème de Cacao,Chocolate,FALSE,FALSE,TRUE
+Crème de Cassis,Cassis,FALSE,FALSE,TRUE
+Crème de Mûre,Black Currant,FALSE,FALSE,TRUE
+Cucumber Slice,Cucumber,TRUE,FALSE,FALSE
+Dark Rum,,FALSE,FALSE,TRUE
+Demerara,,FALSE,FALSE,TRUE
+Double Cream,,FALSE,TRUE,FALSE
+Double Expresso,Coffee,FALSE,FALSE,TRUE
+Drambuie,,FALSE,FALSE,TRUE
+Dry Sherry,,FALSE,FALSE,TRUE
+Dry Vermouth,,FALSE,FALSE,TRUE
+Egg-White,,TRUE,FALSE,FALSE
+Elderflower Cordial,,FALSE,FALSE,TRUE
+Falernum,,FALSE,FALSE,TRUE
+Gin,,FALSE,FALSE,TRUE
+Ginger Beer,Ginger,FALSE,TRUE,FALSE
+Golden Rum,,FALSE,FALSE,TRUE
+Gomme Syrup,,FALSE,FALSE,TRUE
+Granulated Sugar,,TRUE,FALSE,FALSE
+Grapefruit Bitters,Grapefruit,FALSE,FALSE,TRUE
+Grapefruit Juice,Grapefruit,FALSE,TRUE,FALSE
+Grapefruit Soda,Grapefruit,FALSE,TRUE,FALSE
+Grapefruit Zest,Grapefruit,TRUE,FALSE,FALSE
+Grated Nutmeg,,TRUE,FALSE,FALSE
+Grenadine,Grenadine,FALSE,TRUE,FALSE
+Irish Cream Liqueur,Coffee,FALSE,FALSE,TRUE
+Kahlúa,Coffee,FALSE,FALSE,TRUE
+Knob Creek Bourbon,,FALSE,FALSE,TRUE
+Lemon,Lemon,TRUE,FALSE,FALSE
+Lemon and Lime Soda,Lemon,FALSE,TRUE,FALSE
+Lemon Juice,Lemon,TRUE,FALSE,FALSE
+Lemon Peel,Lemon,TRUE,FALSE,FALSE
+Lemon Rind,Lemon,TRUE,FALSE,FALSE
+Lemon Slice,Lemon,TRUE,FALSE,FALSE
+Lemon Twist,Lemon,TRUE,FALSE,FALSE
+Lemon Zest,Lemon,TRUE,FALSE,FALSE
+Light Rum,,FALSE,FALSE,TRUE
+Lime,Lime,TRUE,FALSE,FALSE
+Lime Cordial,Lime,FALSE,TRUE,FALSE
+Lime Juice,Lime,FALSE,TRUE,FALSE
+Lime Quarter,Lime,TRUE,FALSE,FALSE
+Lime Slice,Lime,TRUE,FALSE,FALSE
+Lime Wedge,Lime,TRUE,FALSE,FALSE
+Maraschino Liqueur,Cherry,FALSE,FALSE,TRUE
+Melon Liqueur,Melon,FALSE,FALSE,TRUE
+Milk,,FALSE,TRUE,FALSE
+Mint Leaves,Mint,TRUE,FALSE,FALSE
+Mint Sprig,Mint,TRUE,FALSE,FALSE
+Orange Bitters,Oranger,FALSE,FALSE,TRUE
+Orange Flower Water,Oranger,FALSE,TRUE,FALSE
+Orange Juice,Oranger,FALSE,TRUE,FALSE
+Orange Liqueur,Oranger,FALSE,FALSE,TRUE
+Orange Marmalade,Oranger,TRUE,FALSE,FALSE
+Orange Peel,Oranger,TRUE,FALSE,FALSE
+Orange slice,Oranger,TRUE,FALSE,FALSE
+Orange Wedge,Oranger,TRUE,FALSE,FALSE
+Orange Wheel,Oranger,TRUE,FALSE,FALSE
+Orange Zest Twist,Oranger,TRUE,FALSE,FALSE
+Orgeat Syrup,Orgeat,TRUE,FALSE,FALSE
+Passion Fruit,Passion Fruit,TRUE,FALSE,FALSE
+Passoa,,FALSE,FALSE,TRUE
+Peach Bitters,Peach,FALSE,FALSE,TRUE
+Peach puree,Peach,TRUE,FALSE,FALSE
+Peach Schnapps,Peach,FALSE,FALSE,TRUE
+Pepper,Pepper,TRUE,FALSE,FALSE
+Peppered Vodka,Pepper,FALSE,FALSE,TRUE
+Peychauds Bitters,,FALSE,FALSE,TRUE
+Pineapple Juice,Pineapple,FALSE,TRUE,FALSE
+Pineapple Slice,Pineapple,TRUE,FALSE,FALSE
+Pink Grapefruit Juice,Pink Grapefruit ,FALSE,TRUE,FALSE
+Pink Grapefruit wedge,Pink Grapefruit ,TRUE,FALSE,FALSE
+Pisco,,FALSE,FALSE,TRUE
+Port,,FALSE,FALSE,TRUE
+Prosecco,,FALSE,FALSE,TRUE
+Raspberry,Raspberry,TRUE,FALSE,FALSE
+Raspberries for Garnish,Raspberry,TRUE,FALSE,FALSE
+Raspberry Liqueur,Raspberry,FALSE,FALSE,TRUE
+Raspberry Syrup,Raspberry,FALSE,TRUE,FALSE
+Raspberry Vodka,Raspberry,FALSE,FALSE,TRUE
+Red Wine,Raspberry,FALSE,FALSE,TRUE
+Refined Sugar,,TRUE,FALSE,FALSE
+Rum,,FALSE,FALSE,TRUE
+Runny Honey,Honey,TRUE,FALSE,FALSE
+Rye Whiskey,,FALSE,FALSE,TRUE
+Salt,,TRUE,FALSE,FALSE
+Scotch Whisky,,FALSE,FALSE,TRUE
+Silverskin Onion,,TRUE,FALSE,FALSE
+Simple Syrup,,FALSE,TRUE,FALSE
+Soda,,FALSE,TRUE,FALSE
+Soda Water,,FALSE,TRUE,FALSE
+Strawberry,Strawberry,TRUE,FALSE,FALSE
+Strawberry Liqueur,Strawberry,FALSE,FALSE,TRUE
+Sugar,,TRUE,FALSE,FALSE
+Sugar Cube,,TRUE,FALSE,FALSE
+Sugar Syrup,,FALSE,TRUE,FALSE
+Sweet and Sour mix,,FALSE,TRUE,FALSE
+Sweet Red Vermouth,,FALSE,FALSE,TRUE
+Sweet Vermouth,,FALSE,FALSE,TRUE
+Tequila,,FALSE,FALSE,TRUE
+Tobasco sauce,,TRUE,FALSE,FALSE
+Tomato Juice,Tomato,FALSE,TRUE,FALSE
+Tonic Water,,FALSE,TRUE,FALSE
+Triple Sec,,FALSE,FALSE,TRUE
+Vanilla Sugar Syrup,Vanilla,FALSE,TRUE,FALSE
+Vanilla Vodka,Vanilla,FALSE,FALSE,TRUE
+Vodka,,FALSE,FALSE,TRUE
+Vodka Citrus,Lemon,FALSE,FALSE,TRUE
+Whiskey Liqueur,,FALSE,FALSE,TRUE
+White Rum,,FALSE,FALSE,TRUE
+Worcestershire Sauce,,TRUE,FALSE,FALSE
+Yellow Chartreuse,,FALSE,FALSE,TRUE

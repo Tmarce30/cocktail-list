@@ -13,3 +13,9 @@ CSV.foreach('db/csv/seed-cocktails.csv') do |row|
 end
 
 puts 'Finished'
+
+# CSV.foreach('db/csv/seed-ingredients.csv', headers: true) do |row|
+#   p row[2]
+# end
+
+
