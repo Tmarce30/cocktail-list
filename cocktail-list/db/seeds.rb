@@ -18,12 +18,21 @@ end
 
 puts 'Creating Ingredients'
 CSV.foreach('db/csv/seed-ingredients.csv', headers: true) do |row|
-  Ingredient.created!(
+  Ingredient.create!(
     name:    row['Name'],
     flavour: row['Flavour'],
     topping: to_boolean(row['Topping']),
     mixer:   to_boolean(row['Mixer']),
     alcool:  to_boolean(row['Alcool'])
+    )
+end
+
+puts 'Creating Doses'
+CSV.foreach('db/csv/seed-doses.csv', headers: true) do |row|
+  Dose.create!(
+    description:    row['description'],
+    cocktail_id:    row['cocktail_id'],
+    ingredient_id:  row['ingredient_id']
     )
 end
 
