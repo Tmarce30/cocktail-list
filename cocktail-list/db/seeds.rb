@@ -28,11 +28,14 @@ CSV.foreach('db/csv/seed-ingredients.csv', headers: true) do |row|
 end
 
 puts 'Creating Doses'
+count = 0
 CSV.foreach('db/csv/seed-doses.csv', headers: true) do |row|
+  count += 1
+  puts count
   Dose.create!(
     description:    row['description'],
-    cocktail_id:    row['cocktail_id'],
-    ingredient_id:  row['ingredient_id']
+    cocktail_id:    row['cocktail_id'].to_i,
+    ingredient_id:  row['ingredient_id'].to_i
     )
 end
 
