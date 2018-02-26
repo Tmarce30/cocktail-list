@@ -13,3 +13,14 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+.content{
+  min-height: 100%;
+  margin: 0 auto -100px;
+}
+
