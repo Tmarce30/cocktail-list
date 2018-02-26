@@ -12,10 +12,15 @@ CSV.foreach('db/csv/seed-cocktails.csv') do |row|
     )
 end
 
+puts 'Creating Ingredients'
+CSV.foreach('db/csv/seed-ingredients.csv', headers: true) do |row|
+  p row[2]
+end
+
 puts 'Finished'
 
-# CSV.foreach('db/csv/seed-ingredients.csv', headers: true) do |row|
-#   p row[2]
-# end
 
+def to_boolean(string)
+  string.downcase.to_s == 'true'
+end
 
