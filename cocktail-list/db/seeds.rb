@@ -1,5 +1,9 @@
 require 'csv'
 
+def to_boolean(string)
+  string.downcase.to_s == 'true'
+end
+
 puts 'Cleaning database'
 Cocktail.destroy_all
 
@@ -14,13 +18,15 @@ end
 
 puts 'Creating Ingredients'
 CSV.foreach('db/csv/seed-ingredients.csv', headers: true) do |row|
-  p row[2]
+  Ingredient.created!(
+    name:    row['Name'],
+    flavour: row['Flavour'],
+    topping: to_boolean(row['Topping']),
+    mixer:   to_boolean(row['Mixer']),
+    alcool:  to_boolean(row['Alcool'])
+    )
 end
 
 puts 'Finished'
 
-
-def to_boolean(string)
-  string.downcase.to_s == 'true'
-end
 
