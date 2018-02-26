@@ -1,7 +1,12 @@
-<h1>All cocktails</h1>
+<div class="container">
+  <h1>All cocktails</h1>
 
-<% @cocktails.each do |cocktail| %>
-  <%= cocktail.name %>
-  <%= cocktail.description %>
-  <%= cocktail.recipe %>
-<% end %>
+
+  <% @cocktails.each do |cocktail| %>
+    <div class="row">
+      <h3><%= cocktail.name %></h3>
+      <p><%= cocktail.description %></p>
+      <p><%= cocktail.recipe %></p>
+    </div>
+  <% end %>
+</div>
