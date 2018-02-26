@@ -2,12 +2,20 @@
   <div class="row">
     <h1><%= @cocktail.name %></h1>
   </div>
+
+  <% @cocktail.doses.each do |dose| %>
+    <div class="row">
+      <p><%= dose.ingredient.name %> : <%= dose.description %></p>
+    </div>
+  <% end %>
+
   <div class="row">
     <p><%= @cocktail.description %></p>
   </div>
   <div class="row">
     <p><%= @cocktail.recipe %></p>
   </div>
+
   <div class="row">
     <h3><%= link_to 'All cocktails', cocktails_path %></h3>
   </div>
