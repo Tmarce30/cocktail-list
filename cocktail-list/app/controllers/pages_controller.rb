@@ -1,6 +1,6 @@
 class PagesController < ApplicationController\
 
   def home
-    @cocktails = Cocktail.first(5)
+    @cocktails = Cocktail.order("RANDOM()").first(12)
   end
 end
