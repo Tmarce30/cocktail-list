@@ -8,11 +8,11 @@ puts 'Cleaning database'
 Cocktail.destroy_all
 
 puts 'Creating cocktails'
-CSV.foreach('db/csv/seed-cocktails.csv') do |row|
+CSV.foreach('db/csv/seed-cocktails.csv', headers: true) do |row|
   Cocktail.create!(
-    name:        row[0],
-    description: row[1],
-    recipe:      row[2]
+    name:        row['Name'],
+    description: row['Description'],
+    recipe:      row['Recipe']
     )
 end
 
