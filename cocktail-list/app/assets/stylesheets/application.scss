@@ -19,6 +19,14 @@ html, body{
   margin: 0;
 }
 
+h1, h2, h3 {
+  font-family: 'Cabin', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 .content{
   min-height: 100%;
   margin-bottom: -100px;
