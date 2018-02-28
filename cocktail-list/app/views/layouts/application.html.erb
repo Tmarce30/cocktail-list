@@ -11,7 +11,9 @@
   <body>
 
     <div class="content">
-      <%= render 'layouts/navbar' %>
+      <% unless action_name == "home" %>
+        <%= render 'layouts/navbar' %>
+      <% end %>
       <%= yield %>
       <div class="push"></div>
     </div>
