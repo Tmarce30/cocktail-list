@@ -1,6 +1,8 @@
 <div class="navbar-wagon navbar-fixed-top">
   <!-- Logo -->
-  <h3><%= link_to 'Home', root_path %></h3>
+  <%= link_to root_path do %>
+    <%= image_tag "shaker-logo.png", class: "navbar-wagon-brand"%>
+  <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
