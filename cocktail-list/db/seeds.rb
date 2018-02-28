@@ -9,11 +9,13 @@ Cocktail.destroy_all
 
 puts 'Creating cocktails'
 CSV.foreach('db/csv/seed-cocktails.csv', headers: true) do |row|
-  Cocktail.create!(
+  cocktail = Cocktail.create!(
     name:        row['Name'],
     description: row['Description'],
     recipe:      row['Recipe']
     )
+  cocktail.photo = Rails.root.join("db/images/#{row['photo_url']}").open
+  cocktail.save!
 end
 
 puts 'Creating Ingredients'
