@@ -1,7 +1,12 @@
 <div class="banner">
   <div class="banner-content">
-    <h1>Cocktail list</h1>
-    <p>Only the best</p>
-    <%= link_to 'All the cocktails', cocktails_path, class: "btn btn-primary" %>
+    <div>
+      <%= link_to root_path do %>
+        <%= image_tag "shaker-logo-big.png", class: "banner-big-logo"%>
+      <% end %>
+    </div>
+    <div style="margin-top: 30px;">
+      <%= link_to 'All the cocktails', cocktails_path, class: "btn-transparent" %>
+    </div>
   </div>
 </div>
