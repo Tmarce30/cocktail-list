@@ -40,9 +40,14 @@
 .navbar-wagon-link {
   color: white;
   font-size: 17px;
-  font-weight: bold;
   border-bottom: 3px solid transparent;
 }
+
+.navbar-wagon-link-text {
+  font-weight: bold;
+  margin: 0px;
+}
+
 .navbar-wagon-link:hover {
   text-decoration: none;
   color: white;
