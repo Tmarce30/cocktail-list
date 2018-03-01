@@ -6,7 +6,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Hello world !</h1>
+      <h1 style="color: #F5FDF7;">Latest cocktails</h1>
     </div>
   </div>
 
@@ -14,10 +14,15 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-4">
         <%= link_to cocktail_path(cocktail) do %>
-          <p><%= cocktail.name %></p>
-          <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+          <div class="card" style="background-image: url('<%= cl_image_path cocktail.photo, crop: :fill, class: "img-responsive" %>');">
+            <div class="card-description">
+              <h2><%= cocktail.name %></h2>
+            </div>
+          </div>
         <% end %>
       </div>
     <% end %>
   </div>
 </div>
+
+
