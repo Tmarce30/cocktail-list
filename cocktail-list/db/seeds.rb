@@ -7,15 +7,17 @@ end
 puts 'Cleaning database'
 Cocktail.destroy_all
 
+count = 0
+
 puts 'Creating cocktails'
 CSV.foreach('db/csv/seed-cocktails.csv', headers: true) do |row|
+  puts count += 1
   cocktail = Cocktail.create!(
-    name:        row['Name'],
-    description: row['Description'],
-    recipe:      row['Recipe']
+    name:              row['Name'],
+    description:       row['Description'],
+    recipe:            row['Recipe'],
+    remote_photo_url:   row['photo_url'],
     )
-  cocktail.photo = Rails.root.join("db/images/#{row['photo_url']}").open
-  cocktail.save!
 end
 
 puts 'Creating Ingredients'
@@ -42,5 +44,13 @@ CSV.foreach('db/csv/seed-doses.csv', headers: true) do |row|
 end
 
 puts 'Finished'
+
+
+
+
+
+
+
+
 
 
