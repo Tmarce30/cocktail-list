@@ -5,19 +5,29 @@
   </div>
 
   <div class="row">
-    <% @cocktail.doses.each do |dose| %>
-      <p><%= dose.ingredient.name %> : <%= dose.description %></p>
-      <%= link_to dose_path(dose), method: :delete do %>
-        <i class="fas fa-times"></i>
+    <div class="col-xs-12 col-md-4">
+      <h2>Ingredients</h2>
+      <% @cocktail.doses.each do |dose| %>
+      <div class="list-inline">
+          <li>
+            <p><%= dose.ingredient.name %> : <%= dose.description %></p>
+          </li>
+          <li>
+            <%= link_to dose_path(dose), method: :delete do %>
+              <i class="fas fa-times"></i>
+            <% end %>
+          </li>
+        </div>
       <% end %>
-    <% end %>
-  </div>
-
-  <div class="row">
-    <p><%= @cocktail.description %></p>
-  </div>
-  <div class="row">
-    <p><%= @cocktail.recipe %></p>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <h2>Description</h2>
+      <p><%= @cocktail.description %></p>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <h2>Recipe</h2>
+      <p><%= @cocktail.recipe %></p>
+    </div>
   </div>
 
   <div class="row">
